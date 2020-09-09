@@ -1,9 +1,7 @@
- #!/usr/bin/python3
+#!/usr/bin/python3
 def multiple_returns(sentence):
-    if not sentence:
-        firchar = None
+    if sentence is not "":
+        t = (len(sentence), sentence[0])
     else:
-        firchar = sentence[0]
-    longi = len(sentence)
-    newtupla = longi, firchar
-    return(newtupla)
+        t = (len(sentence), None)
+    return t
