@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+""" 4-print_square.py """
+
+
 def print_square(size):
+    """ print square """
     if type(size) is int:
         if size < 0:
             raise ValueError("size must be >= 0")
