@@ -1,5 +1,10 @@
 #!/usr/bin/python3
+"""Matrix divided"""
+
+
 def matrix_divided(matrix, div):
+    """Matrix divided"""
+
     if (div == 0):
         raise ZeroDivisionError("division by zero")
     if (type(div)is not int and type(div)is not float):
