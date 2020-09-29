@@ -3,6 +3,12 @@
 
 
 class Rectangle:
+#!/usr/bin/python3
+""" 2-rectangle.py """
+
+
+class Rectangle:
+    """ Rectangle """
     number_of_instances = 0
     print_symbol = '#'
 
@@ -67,7 +73,7 @@ class Rectangle:
 
     def __repr__(self):
         """ repr method """
-        return ("Rectangle ({:d}, {:d})".format(self.width, self.height))
+        return ("Rectangle({:d}, {:d})".format(self.__width, self.__height))
 
     def __del__(self):
         """ del method """
@@ -76,6 +82,8 @@ class Rectangle:
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
