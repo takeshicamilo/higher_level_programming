@@ -3,11 +3,6 @@
 
 
 class Rectangle:
-#!/usr/bin/python3
-""" 2-rectangle.py """
-
-
-class Rectangle:
     """ Rectangle """
     number_of_instances = 0
     print_symbol = '#'
@@ -41,9 +36,9 @@ class Rectangle:
     def height(self, value):
         """ height method """
         if not isinstance(value, int):
-            raise TypeError("width must be an integer")
+            raise TypeError("height must be an integer")
         if value < 0:
-            raise ValueError("width must be >= 0")
+            raise ValueError("height must be >= 0")
         self.__height = value
 
     def area(self):
@@ -82,8 +77,6 @@ class Rectangle:
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-        if not isinstance(rect_1, Rectangle):
-            raise TypeError("rect_1 must be an instance of
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
