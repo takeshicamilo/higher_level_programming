@@ -3,6 +3,7 @@
 
 
 class Rectangle:
+    """ Rectangle """
     number_of_instances = 0
     print_symbol = '#'
 
@@ -35,9 +36,9 @@ class Rectangle:
     def height(self, value):
         """ height method """
         if not isinstance(value, int):
-            raise TypeError("width must be an integer")
+            raise TypeError("height must be an integer")
         if value < 0:
-            raise ValueError("width must be >= 0")
+            raise ValueError("height must be >= 0")
         self.__height = value
 
     def area(self):
@@ -67,7 +68,7 @@ class Rectangle:
 
     def __repr__(self):
         """ repr method """
-        return ("Rectangle ({:d}, {:d})".format(self.width, self.height))
+        return ("Rectangle({:d}, {:d})".format(self.__width, self.__height))
 
     def __del__(self):
         """ del method """
