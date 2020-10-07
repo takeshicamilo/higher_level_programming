@@ -1,14 +1,13 @@
-#!/usr/bin/python3
-""" read_lines.py """
+"""This is the documentation for this module. Just read a filename, and
+prints its content given a number of lines"""
 
 
 def read_lines(filename="", nb_lines=0):
-    """ read lines function """
-    lines_number = 0
-    with open(filename, encoding="utf-8") as a_file:
-        for a_line in a_file:
-            print("{}".format(a_line), end="")
-            lines_number += 1
-            if (lines_number == nb_lines):
+    """read line function """
+    with open(filename, 'r') as f:
+        i = 0
+        for lines in f:
+            if nb_lines > 0 and nb_lines <= i:
                 break
-        print("")
+            i += 1
+            print("{}".format(lines), end="")
