@@ -7,7 +7,6 @@ A module for BaseGeometry class.
 
 class BaseGeometry():
     """A BaseGeometry class."""
-
     def integer_validator(self, name, value):
         """A method that validates value."""
         if not isinstance(value, int):
