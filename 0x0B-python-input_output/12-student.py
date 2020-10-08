@@ -13,10 +13,10 @@ class Student():
 
     def to_json(self, attrs=None):
         """ to json function"""
-        if type(attrs) is not list:
+        if not isinstance(attrs, list):
             return self.__dict__
         for element in attrs:
-            if type(element) is not str:
+            if not isinstance(element, str):
                 return self.__dict__
         return {key: value for (key, value)
                 in self.__dict__.items() if key in attrs}
