@@ -25,4 +25,3 @@ class Student():
         """ reload from json function """
         for k, v in json.items():
             self.__dict__[k] = v
-        self.__dict__ = json
