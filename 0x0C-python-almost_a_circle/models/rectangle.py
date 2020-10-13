@@ -133,7 +133,7 @@ class Rectangle(Base):
                     self.x = kwargs["x"]
                 if i == "y":
                     self.y = kwargs["y"]
-    
+
     def to_dictionary(self):
         """ dictionary method """
 
