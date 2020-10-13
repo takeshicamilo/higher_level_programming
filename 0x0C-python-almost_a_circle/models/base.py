@@ -3,6 +3,7 @@
 import json
 import os
 
+
 class Base():
     """ Base Class """
     __nb_objects = 0
@@ -22,7 +23,7 @@ class Base():
             return "[]"
         json_string = json.dumps(list_dictionaries)
         return json_string
-    
+
     @classmethod
     def save_to_file(cls, list_objs):
         """ save to file method  """
@@ -35,9 +36,9 @@ class Base():
             for i in list_objs:
                 new_list.append(i.to_dictionary())
         json_file = Base.to_json_string(new_list)
-        with open(filename, "w", encoding= "utf-8") as file:
+        with open(filename, "w", encoding="utf-8") as file:
             file.write(json_file)
-    
+
     @staticmethod
     def from_json_string(json_string):
         """ from json string method """
@@ -48,11 +49,10 @@ class Base():
         new_list = json_string
         obj = json.loads(new_list)
         return obj
-    
+
     @classmethod
     def create(cls, **dictionary):
         """ create method """
-
 
         class_name = cls.__name__
         if class_name == "Rectangle":
@@ -61,7 +61,7 @@ class Base():
             new = cls(1)
         new.update(**dictionary)
         return new
-    
+
     @classmethod
     def load_from_file(cls):
         """ load from file method """
