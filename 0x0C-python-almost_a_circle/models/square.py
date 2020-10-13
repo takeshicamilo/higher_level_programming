@@ -17,18 +17,18 @@ class Square(Rectangle):
 
         return ("[Square] ({}) {}/{} - {}".format(self.id,
                                                   self.x, self.y, self.width))
-    
+
     @property
     def size(self):
         """ size method """
         return self.width
-    
+
     @size.setter
     def size(self, size):
         """ size setter method """
         self.width = size
         self.height = size
-    
+
     def update(self, *args, **kwargs):
         """Update method """
 
@@ -57,7 +57,7 @@ class Square(Rectangle):
                         self.x = kwargs['x']
                     if i == 'y':
                         self.y = kwargs['y']
-    
+
     def to_dictionary(self):
         """ dictionary method """
 
