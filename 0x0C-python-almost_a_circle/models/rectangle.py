@@ -138,9 +138,9 @@ class Rectangle(Base):
         """ dictionary method """
 
         new_dictionary = {}
-        new_dictionary["x"] = self.x
-        new_dictionary["width"] = self.width
         new_dictionary["id"] = self.id
+        new_dictionary["width"] = self.width
         new_dictionary["height"] = self.height
+        new_dictionary["x"] = self.x
         new_dictionary["y"] = self.y
         return new_dictionary
