@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+all states in orderfrom the database hbtn_0e_0_usa
+"""
 
 import MySQLdb
 import sys
