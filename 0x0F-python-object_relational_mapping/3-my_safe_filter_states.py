@@ -15,5 +15,5 @@ if __name__ == "__main__":
 
     for state in cur.fetchall():
         print(state)
-    cursor.close()
+    cur.close()
     db.close()
