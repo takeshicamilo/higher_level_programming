@@ -1,19 +1,20 @@
 #!/usr/bin/python3
 """
-all states in orderfrom the database hbtn_0e_0_usa
+python script that lists all states from the database hbtn_0e_0_usa with a
+given name and is safe from MySQL injections
 """
 
 import MySQLdb
-import sys
+from sys import argv
 
 if __name__ == "__main__":
-    db = MySQLdb.connect(user=sys.argv[1],port=3306, passwd=sys.argv[2], db=sys.argv[3])
-    cur = db.cursor()
-
-    cur.execute(
-        "SELECT * FROM states WHERE name = '{}' ORDER BY states.id ASC".format(sys.argv[4]))
-
-    for state in cur.fetchall():
-        print(state)
-    cur.close()
+    db = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
+                         passwd=argv[2], db=argv[3], charset="utf8")
+    cursor = db.cursor()
+    cursor.execute("SELECT * FROM states WHERE name LIKE %s ORDER BY id ASC",
+                   (argv[4],))
+    rows = cursor.fetchall()
+    for row in rows:
+        print(row)
+    cursor.close()
     db.close()
