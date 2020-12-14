@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-#xdd
+"""
+model_city 
+"""
+
 from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
