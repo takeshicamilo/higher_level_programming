@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#xdd
+#xsddd
 from sqlalchemy import Column, Integer, String
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -14,7 +14,8 @@ if __name__ == "__main__":
         Session = sessionmaker(bind=engine)
         session = Session()
 
-        states = session.query(State).filter_by(id=2).first()
-        states.name = 'New Mexico'
-
-        session.commit()
+        states = session.query(State).order_by(State.id).first()
+        if states is None:
+                print("Nothing")
+        else:
+                print("{}: {}".format(states.id, states.name))
