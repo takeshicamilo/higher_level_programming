@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-# print only states with N
+"""
+lists all states with N from the database hbtn_0e_0_usa
+"""
 
 import MySQLdb
 import sys
