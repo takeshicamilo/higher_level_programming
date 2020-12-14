@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#print only states with N
+# print only states with N
 
 import MySQLdb
 import sys
@@ -10,4 +10,4 @@ cur = db.cursor()
 cur.execute("SELECT * FROM states WHERE name REGEXP '^[n]'")
 
 for state in cur.fetchall():
-        print(state)
+    print(state)
