@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#filter states by name
+# filter states by name
 
 import MySQLdb
 import sys
@@ -10,4 +10,4 @@ cur = db.cursor()
 cur.execute("SELECT * FROM states WHERE name = '{}'".format(sys.argv[4]))
 
 for state in cur.fetchall():
-        print(state)
+    print(state)
