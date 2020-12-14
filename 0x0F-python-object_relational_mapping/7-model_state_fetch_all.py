@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-#xdd
+"""
+7-model state fetch all
+"""
 from sqlalchemy import Column, Integer, String
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
