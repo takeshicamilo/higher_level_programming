@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#print contain table
+# print contain table
 import MySQLdb
 import sys
 
@@ -9,4 +9,4 @@ cur = db.cursor()
 cur.execute("SELECT * FROM states ORDER BY id ASC")
 
 for state in cur.fetchall():
-        print(state)
+    print(state)
