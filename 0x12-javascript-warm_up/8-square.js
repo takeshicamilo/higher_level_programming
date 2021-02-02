@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 // xddd
 
 if (process.argv[2] === undefined || isNaN(process.argv[2])) {
