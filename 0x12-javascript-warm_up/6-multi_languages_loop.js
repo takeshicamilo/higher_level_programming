@@ -1,7 +1,7 @@
 #!/usr/bin/node
 // xddd
 
-const texts = ['C is fun', 'Python is cool', 'javascript is awesome   '];
+const texts = ['C is fun', 'Python is cool', 'javascript is amazing'];
 
 for (let x = 0; x < texts.length; x++) {
   console.log(texts[x]);
