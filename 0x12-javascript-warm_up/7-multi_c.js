@@ -1,4 +1,4 @@
-#!/usr/local/node
+#!/usr/bin/node
 // xddd
 
 const c = 'C is fun';

@@ -1,5 +1,4 @@
-#!/usr/local/bin/node
-//! /usr/local/node
+#!/usr/bin/node
 // xddd
 
 const myObject = {

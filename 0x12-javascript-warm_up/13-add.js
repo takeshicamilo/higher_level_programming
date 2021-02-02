@@ -1,4 +1,4 @@
-#!/usr/local/node
+#!/usr/bin/node
 // xddd
 
 exports.add = function (a, b) {

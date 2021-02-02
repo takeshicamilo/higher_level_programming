@@ -1,4 +1,4 @@
-#!/usr/local/node
+#!/usr/bin/node
 // xddd
 
 console.log('C is fun');

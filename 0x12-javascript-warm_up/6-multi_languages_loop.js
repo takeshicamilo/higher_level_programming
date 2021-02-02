@@ -1,4 +1,4 @@
-#!/usr/local/node
+#!/usr/bin/node
 // xddd
 
 const texts = ['C is fun', 'Python is cool', 'javascript is awesome   '];
