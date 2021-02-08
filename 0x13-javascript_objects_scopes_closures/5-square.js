@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 // xdddd
 const Rectangle = require('./4-rectangle');
 
