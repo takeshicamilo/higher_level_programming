@@ -1,10 +1,13 @@
 #!/usr/bin/node
-// lel
-
-const Rectangle = require('./4-rectangle');
-
-module.exports = class Square extends Rectangle {
+// JS Script
+module.exports = class Square extends require('./5-square') {
   charPrint (c) {
-    this.print(c);
+    if (c === undefined) {
+      c = 'X';
+    }
+
+    for (let i = 0; i < this.height; i++) {
+      console.log(c.repeat(this.width));
+    }
   }
 };
