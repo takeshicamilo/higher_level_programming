@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 
 // Read the file and print its contents.
 const link = 'https://swapi-api.hbtn.io/api/films/' + process.argv[2];

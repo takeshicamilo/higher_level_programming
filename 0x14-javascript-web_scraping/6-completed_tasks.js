@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 /*
     computes the number of tasks completed by user id
 */
