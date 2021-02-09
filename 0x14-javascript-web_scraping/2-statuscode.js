@@ -1,9 +1,14 @@
 #!/usr/bin/node
+/*
+     display the status code of a GET request
+*/
+const request = require('request');
+const url = process.argv[2];
 
-// Read the file and print its contents.
-const link = process.argv[2];
-const https = require('https');
-
-https.get(link, function (res) {
-  console.log('code: ', res.statusCode); // <======= Here's the status code
+request(url, function (error, response, body) {
+  if (error) {
+    console.log('code:', response.statusCode);
+  } else {
+    console.log('code:', response.statusCode);
+  }
 });
